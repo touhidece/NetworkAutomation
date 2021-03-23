@@ -1,0 +1,25 @@
+import getpass
+import telnetlib
+import sys
+
+user = raw_input("Enter your remote account: ")
+password =getpass.getpass(prompt='Enter your password:')
+f = open('routerIP')
+
+#f=["192.168.119.254","192.168.115.254"]
+
+for IP in f:
+    IP = IP.strip()
+    print("Backup router IP: " + IP)
+    HOST = IP
+    tn = telnetlib.Telnet(HOST)
+    tn.read_until(b"Username: ")
+    tn.write(user.encode('ascii') + b"\n")
+    if password:
+       tn.read_until(b"Password: ")
+       tn.write(password.encode('ascii') + b"\n")
+    tn.write(b"copy running-config tftp:\n")
+    tn.write(b" 192.168.114.165\n" )
+    tn.write(b"\n")
+    tn.write(b"exit\n")
+    print(tn.read_all().decode('ascii'))
