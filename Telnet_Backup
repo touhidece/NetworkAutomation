@@ -6,7 +6,7 @@ user = raw_input("Enter your remote account: ")
 password =getpass.getpass(prompt='Enter your password:')
 f = open('routerIP')
 
-#f=["192.168.119.254","192.168.115.254"]
+#f=["192.168.11.254","192.168.11.254"]
 
 for IP in f:
     IP = IP.strip()
