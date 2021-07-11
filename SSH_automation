@@ -8,7 +8,7 @@ password = getpass()
 #ip = open('routerIP')
 useradd = 'set member "example"'
 #useradd = 'unselect member "rniaz"'
-f=["192.168.201.155","192.168.115.19"]
+f=["192.168.20.155","192.168.11.19"]
 for IPadr in f:
     IPadr=IPadr.strip()
     print("Firewall IP: " + IPadr)
