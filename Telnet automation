@@ -8,7 +8,7 @@ password =getpass.getpass(prompt='Enter your password:')
 ##f = open('routerIP')
 #need to add user
 useradd = 'set "mdariful" "mriad" "hossains" "sazad" "momin" "mrubayat" "masud" "moniruzzaman" "adnan" "ikamrul" "tasnim" "anam" "promi" "mmhaque" "ashiq"'
-f=["192.168.201.155","192.168.115.19"]
+f=["192.168.21.155","192.168.15.19"]
 print(f)
 for IP in f:
     IP = IP.strip()
