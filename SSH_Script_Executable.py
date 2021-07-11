@@ -10,7 +10,7 @@ UserID=input("Please Enter the User ID:")
 #useradd = 'set member "mitali" "halim" "mdariful" "mriad" "hossains" "sazad" "momin" "mrubayat" "masud" "moniruzzaman" "adnan" "ikamrul" "tasnim" "anam" "promi" "mmhaque" "ashiq" "abut" "arifeen" "ferdous" "hfaisal" "husain" "jubayer" "koushik" "mdelowar" "mdzakir" "mjalal" "msazzad" "mushfiqur" "nrobin" "rakybul" "samiul" "shikha" "tanvirh" "adnan" "dalilur" "foysal" "hmehedi" "ikamrul" "jyoti" "kuddin" "mdhafizur" "mhmehedi" "mmhaque" "mshariful" "nahian" "omarf" "ralam" "shabib" "sumanch" "tanzim" "alom" "eyamin" "golams" "hmmehedi" "ishtiaq" "kislam" "mahir" "mdimran" "mimam" "mnafiz" "mshuvo" "nahsan" "raisul" "robin" "shefath" "sushmita" "abusaleh" "ahmedr" "amunny" "arozina" "farjanay" "hhasan" "kimmia" "lmamun" "rhasibur" "salekin" "shoaib" "tanzir" "adnan" "ahosan" "aniks" "bokteyar" "ftamanna" "islams" "mmhaque" "riya" "sonia" "taraqul" "afsanay" "amena" "arifh" "bonny" "junayed" "litonc" "nazmulh" "rsiddiqur" "shikha" "sushmita" "tithi" "shamsun"'
 useradd = 'append member "rniaz" "mmoshiur" "ataslima" "shamsun"'
 #useradd = 'unselect member '+UserID
-f=["192.168.201.155","192.168.115.19"]
+f=["192.168.20.155","192.168.11.19"]
 for IPadr in f:
     IPadr=IPadr.strip()
     print("Firewall IP: " + IPadr)
