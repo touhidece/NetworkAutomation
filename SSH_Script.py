@@ -17,7 +17,7 @@ for IPadr in ip:
     #print (output)
 
     remote_conn.send("copy running-config tftp:\n")
-    remote_conn.send("192.168.114.165\n")
+    remote_conn.send("192.168.1.1\n")
     remote_conn.send("\n")
     remote_conn.send("exit\n")
     time.sleep(.5)
